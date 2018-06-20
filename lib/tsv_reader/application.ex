@@ -10,7 +10,7 @@ defmodule TsvReader.Application do
     children = [
       # Starts a worker by calling: TsvReader.Worker.start_link(arg)
       # {TsvReader.Worker, arg},
-      Plug.Adapters.Cowboy.child_spec(scheme: :http, plug: TsvReader.Router, options: [port: 8080])
+      Plug.Adapters.Cowboy.child_spec(scheme: :http, plug: TsvReader.Router, options: [port: Settings.port])
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

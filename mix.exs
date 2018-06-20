@@ -14,7 +14,7 @@ defmodule TsvReader.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :cowboy, :plug, :poison, :remix],
+      extra_applications: [:logger, :cowboy, :plug, :poison, :remix, :env_helper],
       mod: {TsvReader.Application, []}
     ]
   end
@@ -29,6 +29,7 @@ defmodule TsvReader.MixProject do
       {:plug, "~> 1.5"},
       {:poison, "~> 3.1"},
       {:remix, "~> 0.0.1"},
+      {:env_helper, "~> 0.0.2"},
     ]
   end
 end
