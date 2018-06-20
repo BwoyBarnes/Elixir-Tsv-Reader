@@ -1,0 +1,11 @@
+{application,tsv_reader,
+             [{applications,[kernel,stdlib,elixir,logger,cowboy,plug,poison,
+                             remix]},
+              {description,"tsv_reader"},
+              {modules,['Elixir.Player','Elixir.PlayerList','Elixir.Todo',
+                        'Elixir.TodoList','Elixir.TsvReader.Application',
+                        'Elixir.TsvReader.Router']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger,cowboy,plug,poison,remix]},
+              {mod,{'Elixir.TsvReader.Application',[]}}]}.

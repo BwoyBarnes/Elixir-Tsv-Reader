@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Elixir TSV reader by Odane Barnes</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="bodyLightGreyBG">
+
+  <div class="title-bar">
+      <div class="title-bar-left">
+        <span class="title-bar-title">TSV Reader Test</span>
+      </div>
+      <div class="title-bar-right">
+        <span class="title-bar-title">A Project By Odane Barnes</span>
+      </div>
+    </div>
+
+  
+    <div class="grid-container full">
+      <div class="grid-x grid-margin-y">
+        <div class="cell small-12">
+          
+          <div class="headerImage">
+            <div class="grid-container">
+              <div class="grid-x">
+                <div class="cell small-12">
+                  <h1 class="headerCaption">
+                      <br><br>Welcome to<br>World Cup 2018<br>
+                      <span class="small">A Look at The Players</span>
+                  </h1>
+                </div>
+              </div>
+            </div>    
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="grid-container">
+      <br>
+      <hr>
+      <h1>Players</h1>
+      <hr>
+      <br>
+      
+      <div class="grid-x grid-padding-x grid-margin-x grid-margin-y small-up-1 medium-up-2 large-up-3">
+        <%= for player <- players do %>
+        <div class="cell cardStyle">
+          <div class="card">
+            <img src="img/players/<%= Map.get(elem(player, 1), :img) %>" class="card-image">
+            <div class="card-section">
+              <h4><%= Map.get(elem(player, 1), :player) %></h4>
+              <p>Country: <%= Map.get(elem(player, 1), :country) %></p>
+              <p>Jersey #: <%= Map.get(elem(player, 1), :jersey) %></p>
+              <p>Position #: <%= Map.get(elem(player, 1), :position) %></p>
+            </div>
+          </div>
+        </div>
+        <% end %>
+        
+      </div>
+    </div>
+
+    <!-- <div class="grid-x grid-padding-x small-up-2 medium-up-3">
+      <div class="cell">
+        <div class="card">
+          <img src="img/people.png">
+          <div class="card-section">
+            <h4>This is a row of cards.</h4>
+            <p>This row of cards is embedded in an Flex Block Grid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card">
+          <img src="img/people.png">
+          <div class="card-section">
+            <h4>This is a card.</h4>
+            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card">
+          <img src="img/people.png">
+          <div class="card-section">
+            <h4>This is a card.</h4>
+            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+.headerImage {
+  background-image: url('../img/football-header-1.jpg');
+  background-image: url('../img/football-header-2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  height: 100vh;
+  align-items: center;
+  opacity: 0.95;
+}
+
+.footerImage {
+  background-image: url('../images/footerImage2.jpg');
+  margin-top: -100px;
+}
+
+.headerCaption {
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+  text-shadow: 0px 0px 20px black;
+}
+
+.card-image{
+  height: 250px !important;
+  width: auto !important;
+}
+
+/* Small only */
+
+@media screen and (max-width: 39.9375em) {
+  .headerCaption {
+    font-size: 2em;
+  }
+}
+
+
+/* Medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .headerCaption {
+    font-size: 2.5em;
+  }
+
+  
+}
+
+
+/* Large only */
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .headerCaption {
+    font-size: 4em;
+  }
+}
+
+.headerCaption > span.small {
+  color: #24c5b9 !important;
+}
+
+.cardStyle {
+  background: #f3f3f3;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #eeeeee;
+  padding: 15px;
+
+  /* max-width: 350px; */
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding: 15px 0px 5px;
+}

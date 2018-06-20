@@ -1,0 +1,136 @@
+body, html {
+    height: 100%;
+}
+
+/* ============== Colors ================== */
+.bodyLightGreyBG {
+    background-color: #f5f5f5;
+    color: #292e34;
+}
+
+.bodyTextColor {
+    color: #292e34;
+}
+
+.panelWhiteBG {
+    background-color: #f5f5f5 !important;
+}
+
+.mainNavGreyBg {
+    background-color: #1d1d1d !important;
+}
+
+.sideNavGreyBG1 {
+    background-color: #292e34 !important;
+}
+
+.sideNavGreyBG2 {
+    background-color: #393f44 !important;
+}
+
+.sideNavGreyBG3 {
+    background-color: #4d5258 !important;
+}
+
+.blueAccentColor {
+    background-color: #30aae8 !important;
+}
+
+.active {
+    background-color: #393f44 !important;
+}
+
+/* ============== Colors ================== */
+
+.navBlueAccent {
+    border-top: 5px solid #30aae8;
+}
+
+.nav-link:hover {
+    background-color: #393f44 !important;
+}
+
+.mainNavBar {
+    background-color: #1d1d1d !important;
+    border-top: 1px solid #30aae8;
+    margin-bottom: 25px;
+}
+
+.mainNavBar>a,
+a.nav-link {
+    color: white !important;
+}
+
+a.navbar-brand {
+    color: #30aae8 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.nav-link {
+    transition: 0.5s;
+}
+
+.mainHeroImage {
+    /* background-image: url('../projects/Photography_Design/images/creative-colorful-wallpaper-wallpaper-5.jpg'); */
+    background-image: url('../img/mainhero.jpg'); 
+    background-image: url('../img/mainhero2.jpg'); 
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.95;
+
+    margin-top: -25px;
+}
+
+.section-break {
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin-bottom: 25px; */
+}
+
+.section-break > a {
+    font-size: 2rem;
+}
+
+.container-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.main-heading {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+.project-heading {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.project-description {
+    margin-bottom: 35px;
+}
+
+.project-description {
+    font-size: 1.25rem;
+}
+
+@media(min-width:992px) {
+    img.img-fluid.img-thumbnail {
+        max-width: 900px;
+    }
+}
